@@ -1,0 +1,65 @@
+{
+  "custom": {},
+  "events": null,
+  "params": {},
+  "permissions": null,
+  "propConfig": {
+    "params.feature": {
+      "paramDirection": "input"
+    },
+    "params.key": {
+      "paramDirection": "input"
+    },
+    "params.tier1": {
+      "paramDirection": "input"
+    },
+    "params.tier2": {
+      "paramDirection": "input"
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Title"
+        },
+        "position": {
+          "basis": "56px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "props": {
+          "params": {
+            "icon": "alarm",
+            "text": "Alarms"
+          },
+          "path": "Page/Embedded/Title"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "AlarmStatusTable"
+        },
+        "position": {
+          "basis": "400px",
+          "display": true,
+          "grow": 1,
+          "shrink": 1
+        },
+        "type": "ia.display.alarmstatustable"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "Page/Page"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

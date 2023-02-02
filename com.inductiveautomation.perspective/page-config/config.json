@@ -1,0 +1,53 @@
+{
+  "pages": {
+    "/charts": {
+      "viewPath": "Page/Charts"
+    },
+    "/alarms": {
+      "viewPath": "Page/Alarms"
+    },
+    "/": {
+      "viewPath": "Page/Home"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom",
+    "left": [
+      {
+        "viewPath": "Docks/Menu",
+        "id": "menu",
+        "viewParams": {},
+        "size": 260,
+        "resizable": false,
+        "iconUrl": "",
+        "modal": false,
+        "show": "auto",
+        "anchor": "fixed",
+        "content": "push",
+        "autoBreakpoint": 768,
+        "handle": "hide"
+      }
+    ],
+    "top": [
+      {
+        "viewPath": "Framework/Breakpoint",
+        "id": "",
+        "viewParams": {
+          "path": "Header/Header",
+          "breakpointLarge": "768",
+          "breakpointMedium": "500",
+          "params": {}
+        },
+        "size": 58,
+        "resizable": false,
+        "iconUrl": "",
+        "modal": false,
+        "show": "visible",
+        "anchor": "fixed",
+        "content": "push",
+        "autoBreakpoint": 480,
+        "handle": "hide"
+      }
+    ]
+  }
+}

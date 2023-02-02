@@ -1,0 +1,130 @@
+{
+  "custom": {},
+  "events": null,
+  "params": {},
+  "permissions": null,
+  "propConfig": {
+    "params.feature": {
+      "paramDirection": "input"
+    },
+    "params.key": {
+      "paramDirection": "input"
+    },
+    "params.tier1": {
+      "paramDirection": "input"
+    },
+    "params.tier2": {
+      "paramDirection": "input"
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Title"
+        },
+        "position": {
+          "basis": "56px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "props": {
+          "params": {
+            "icon": "show_chart",
+            "text": "Charts"
+          },
+          "path": "Page/Embedded/Title"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "TimeSeriesChart"
+        },
+        "position": {
+          "basis": "auto",
+          "display": true,
+          "grow": 1,
+          "shrink": 1
+        },
+        "props": {
+          "defaultStyles": {
+            "colorScheme": "Paired"
+          },
+          "series": [
+            {
+              "data": [
+                {
+                  "Pressure": 12,
+                  "Temperature": 52,
+                  "time": 1560469431423
+                },
+                {
+                  "Pressure": 42,
+                  "Temperature": 18,
+                  "time": 1560469432423
+                },
+                {
+                  "Pressure": 81,
+                  "Temperature": 26,
+                  "time": 1560469433423
+                },
+                {
+                  "Pressure": 11,
+                  "Temperature": 63,
+                  "time": 1560469434423
+                },
+                {
+                  "Pressure": 23,
+                  "Temperature": 65,
+                  "time": 1560469435423
+                },
+                {
+                  "Pressure": 43,
+                  "Temperature": 12,
+                  "time": 1560469436423
+                },
+                {
+                  "Pressure": 71,
+                  "Temperature": 61,
+                  "time": 1560469437423
+                },
+                {
+                  "Pressure": 89,
+                  "Temperature": 60,
+                  "time": 1560469438423
+                },
+                {
+                  "Pressure": 66,
+                  "Temperature": 58,
+                  "time": 1560469439423
+                },
+                {
+                  "Pressure": 33,
+                  "Temperature": 1,
+                  "time": 1560469440423
+                }
+              ],
+              "name": "Boiler"
+            }
+          ],
+          "style": {
+            "padding": "16px"
+          }
+        },
+        "type": "ia.chart.timeseries"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "Page/Page"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}
